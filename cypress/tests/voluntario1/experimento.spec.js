@@ -1,17 +1,22 @@
 describe("Experimento voluntario", () => {
-  before(() => {
-    cy.visit("/");
-  });
   context("Caso teste 1", () => {
-    it("Dynamic Loading", () => {});
+    it("Dynamic Loading", () => {
+      cy.visit("https://the-internet.herokuapp.com/");
+    });
   });
   context("Caso teste 2", () => {
-    it("Form Authentication", () => {});
+    it("Form Authentication", () => {
+      cy.visit("https://the-internet.herokuapp.com/");
+    });
   });
   context("Caso teste 3", () => {
-    it("Download File", () => {});
+    it("Download File", () => {
+      cy.visit("https://the-internet.herokuapp.com/");
+    });
   });
   context("Caso teste 4", () => {
-    it("JavaScript Alerts", () => {});
+    it("JavaScript Alerts", () => {
+      cy.visit("https://the-internet.herokuapp.com/");
+    });
   });
 });
