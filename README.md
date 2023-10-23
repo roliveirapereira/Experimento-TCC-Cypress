@@ -6,7 +6,7 @@ Aqui estarão presentes os códigos desenvolvidos pelos voluntários
 
 1. Clonar repositório: `git clone https://github.com/luccaborborema/Experimento-TCC-Cypress.git`
 2. Instalar dependências: `npm install` (necessário node/npm instalados)
-3. Inicializar cypress: `npx cypress run`
+3. Inicializar cypress: `npx cypress open`
 
 # Organização dos arquivos
 
