@@ -1,4 +1,0 @@
-hora:
-minuto:
-segundo:
-senioridade:
