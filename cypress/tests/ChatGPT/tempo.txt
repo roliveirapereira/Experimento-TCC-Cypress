@@ -1,4 +1,4 @@
 hora:
-minuto:
-segundo:
+minuto: 36
+segundo: 41
 senioridade:
