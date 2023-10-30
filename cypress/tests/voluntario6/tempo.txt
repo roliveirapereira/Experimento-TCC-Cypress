@@ -2,4 +2,7 @@ hora:
 minuto:
 segundo:
 senioridade:
-senioridade:
+Primeiro contato ( )
+Iniciante ( )
+Intermediário ( )
+Experiente ( )
