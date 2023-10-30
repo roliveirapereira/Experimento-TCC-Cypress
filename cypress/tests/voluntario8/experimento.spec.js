@@ -10,7 +10,7 @@ describe("Experimento voluntario", () => {
     });
   });
   context("Caso teste 3", () => {
-    it("Download File", () => {
+    it("Redirect Link", () => {
       cy.visit("https://the-internet.herokuapp.com/");
     });
   });
