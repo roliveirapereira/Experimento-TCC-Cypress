@@ -1,6 +1,6 @@
 hora: 0
-minuto: 41
-segundo: 17
+minuto: 44
+segundo: 32
 senioridade:
 Primeiro contato ( )
 Iniciante (X)
