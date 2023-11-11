@@ -32,7 +32,7 @@ describe("Experimento voluntario", () => {
     });
   });
   context("Caso teste 3", () => {
-    it.only("Redirect Link", () => {
+    it("Redirect Link", () => {
       cy.visit("https://the-internet.herokuapp.com/");
 
       cy.contains("Redirect Link").click();
@@ -42,9 +42,15 @@ describe("Experimento voluntario", () => {
       cy.contains("Status Codes");
     });
   });
-  // context("Caso teste 4", () => {
-  //   it("JavaScript Alerts", () => {
-  //     cy.visit("https://the-internet.herokuapp.com/");
-  //   });
-  // });
+  context("Caso teste 4", () => {
+    it.only("JavaScript Alerts", () => {
+      cy.visit("https://the-internet.herokuapp.com/");
+
+      cy.contains("JavaScript Alerts").click();
+
+      cy.contains("Click for JS Confirm").click();
+
+      cy.contains("You clicked: Ok");
+    });
+  });
 });
