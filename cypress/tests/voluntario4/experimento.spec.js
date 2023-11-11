@@ -43,7 +43,7 @@ describe("Experimento voluntario", () => {
     });
   });
   context("Caso teste 4", () => {
-    it.only("JavaScript Alerts", () => {
+    it("JavaScript Alerts", () => {
       cy.visit("https://the-internet.herokuapp.com/");
 
       cy.contains("JavaScript Alerts").click();
