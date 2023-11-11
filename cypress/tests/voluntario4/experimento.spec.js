@@ -17,7 +17,7 @@ describe("Experimento voluntario", () => {
     });
   });
   context("Caso teste 2", () => {
-    it.("Form Authentication", () => {
+    it("Form Authentication", () => {
       cy.visit("https://the-internet.herokuapp.com/");
 
       cy.contains("Form Authentication").click();
@@ -31,11 +31,17 @@ describe("Experimento voluntario", () => {
       cy.contains("You logged into a secure area!");
     });
   });
-  // context("Caso teste 3", () => {
-  //   it("Redirect Link", () => {
-  //     cy.visit("https://the-internet.herokuapp.com/");
-  //   });
-  // });
+  context("Caso teste 3", () => {
+    it.only("Redirect Link", () => {
+      cy.visit("https://the-internet.herokuapp.com/");
+
+      cy.contains("Redirect Link").click();
+
+      cy.contains("here").click();
+
+      cy.contains("Status Codes");
+    });
+  });
   // context("Caso teste 4", () => {
   //   it("JavaScript Alerts", () => {
   //     cy.visit("https://the-internet.herokuapp.com/");
