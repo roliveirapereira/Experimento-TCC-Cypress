@@ -1,8 +1,7 @@
 describe('Experimento voluntario', () => {
   context('Caso teste 1', () => {
     it('Dynamic Loading', () => {
-      cy.visit('https://the-internet.herokuapp.com/');
-      cy.get('li > a').contains('Dynamic Loading').click();
+      cy.visit('http://the-internet.herokuapp.com/dynamic_loading');
       cy.get('.example > a')
         .contains('Example 1: Element on page that is hidden')
         .click();
@@ -16,8 +15,7 @@ describe('Experimento voluntario', () => {
 
   context('Caso teste 2', () => {
     it('Form Authentication', () => {
-      cy.visit('https://the-internet.herokuapp.com/');
-      cy.get('li > a').contains('Form Authentication').click();
+      cy.visit('http://the-internet.herokuapp.com/login');
       cy.get('input[name=username]').type('tomsmith');
       cy.get('input[name=password]').type('SuperSecretPassword!');
       cy.get('button[type=submit]').click();
