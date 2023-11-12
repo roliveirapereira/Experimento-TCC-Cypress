@@ -17,6 +17,11 @@ describe('Experimento voluntario', () => {
   context('Caso teste 2', () => {
     it('Form Authentication', () => {
       cy.visit('https://the-internet.herokuapp.com/');
+      cy.get('li > a').contains('Form Authentication').click();
+      cy.get('input[name=username]').type('tomsmith');
+      cy.get('input[name=password]').type('SuperSecretPassword!');
+      cy.get('button[type=submit]').click();
+      cy.contains('You logged into a secure area!').should('be.visible');
     });
   });
 
