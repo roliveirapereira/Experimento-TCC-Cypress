@@ -1,8 +1,8 @@
 hora: 0
-minuto: 41
+minuto: 33
 segundo: 17
-senioridade: Júnior
+senioridade: Pleno
 Primeiro contato ( )
-Iniciante ( )
-Intermediário (X)
+Iniciante (X)
+Intermediário ( )
 Experiente ( )
