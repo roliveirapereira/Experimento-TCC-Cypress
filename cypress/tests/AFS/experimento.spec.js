@@ -27,7 +27,13 @@ describe('Experimento voluntario', () => {
 
   context('Caso teste 3', () => {
     it('Redirect Link', () => {
-      cy.visit('https://the-internet.herokuapp.com/');
+      cy.visit('https://the-internet.herokuapp.com/redirector');
+      cy.get('a').contains('here').click();
+      cy.url().should(
+        'match',
+        /https?:\/\/the-internet.herokuapp.com\/status_codes/
+      );
+      cy.contains('Status Codes').should('be.visible');
     });
   });
 
